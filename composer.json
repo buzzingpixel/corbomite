@@ -1,0 +1,28 @@
+{
+    "name": "buzzingpixel/corbomite",
+    "description": "Corbomite Project",
+    "license": "Apache-2.0",
+    "homepage": "https://buzzingpixel.com/",
+    "type": "project",
+    "require": {
+    },
+    "require-dev": {
+        "roave/security-advisories": "dev-master"
+    },
+    "autoload": {
+        "psr-4": {
+            "src\\": "src/"
+        }
+    },
+    "config": {
+        "optimize-autoloader": true
+    },
+    "scripts": {
+        "post-create-project-cmd": [
+            "@php -r \"copy('.env.example', '.env');\"",
+            "@php -r \"unlink('composer.json');\"",
+            "@php -r \"rename('composer.json.default', 'composer.json');\"",
+            "@composer dump-autoload -o"
+        ]
+    }
+}
