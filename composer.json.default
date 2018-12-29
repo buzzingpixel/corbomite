@@ -5,6 +5,10 @@
     "homepage": "https://buzzingpixel.com/",
     "type": "project",
     "require": {
+        "php": ">=7.2",
+        "vlucas/phpdotenv": "^2.5",
+        "filp/whoops": "^2.3",
+        "php-di/php-di": "^6.0"
     },
     "require-dev": {
         "roave/security-advisories": "dev-master"
@@ -16,13 +20,5 @@
     },
     "config": {
         "optimize-autoloader": true
-    },
-    "scripts": {
-        "post-create-project-cmd": [
-            "@php -r \"copy('.env.example', '.env');\"",
-            "@php -r \"unlink('composer.json');\"",
-            "@php -r \"rename('composer.json.default', 'composer.json');\"",
-            "@composer dump-autoload -o"
-        ]
     }
 }
