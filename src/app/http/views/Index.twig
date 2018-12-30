@@ -3,6 +3,7 @@ Hello World
 someVar: {{ someVar }}
 <br><br>
 Dev Mode: {% if devMode %}true{% else %}false{% endif %}
+
 <br><br>
 <br><br>
 
@@ -14,3 +15,10 @@ Dev Mode: {% if devMode %}true{% else %}false{% endif %}
     {% default %}
         test default
 {% endswitch %}
+
+<br><br>
+<br><br>
+
+{% filter widont %}
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam cumque dolorem enim error facere fuga hic magni nulla quaerat, quas, quidem ratione repellat voluptatem. Alias aperiam beatae consectetur qui sequi!</p>
+{% endfilter %}

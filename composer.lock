@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "ad0c80a1944d5ebc60e6c582cf3e4a25",
+    "content-hash": "894f35ea4497b3913433fcf8a6dc185a",
     "packages": [
         {
             "name": "buzzingpixel/corbomite-cli",
@@ -237,6 +237,51 @@
             ],
             "description": "Provides a {% switch %} tag for Twig switch case statements",
             "time": "2018-12-30T23:12:10+00:00"
+        },
+        {
+            "name": "buzzingpixel/twig-widont",
+            "version": "1.0.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/buzzingpixel/twig-widont.git",
+                "reference": "3f9bbe45fa641e3a4088e691815df017f213921b"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/buzzingpixel/twig-widont/zipball/3f9bbe45fa641e3a4088e691815df017f213921b",
+                "reference": "3f9bbe45fa641e3a4088e691815df017f213921b",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=7.1",
+                "twig/twig": "^2.5"
+            },
+            "require-dev": {
+                "phpmd/phpmd": "^2.6",
+                "roave/security-advisories": "dev-master",
+                "squizlabs/php_codesniffer": "^3.4"
+            },
+            "type": "library",
+            "extra": {
+                "twigExtensions": [
+                    "buzzingpixel\\twigwidont\\WidontTwigExtension"
+                ]
+            },
+            "autoload": {
+                "psr-4": {
+                    "buzzingpixel\\twigwidont\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "authors": [
+                {
+                    "name": "TJ Draper",
+                    "email": "tj@buzzingpixel.com",
+                    "homepage": "https://buzzingpixel.com"
+                }
+            ],
+            "description": "A Twig widont filter",
+            "time": "2018-12-30T23:47:44+00:00"
         },
         {
             "name": "composer/ca-bundle",
