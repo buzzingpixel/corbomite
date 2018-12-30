@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "90aecf60fc14d3df5a49b3fc8c2b3d50",
+    "content-hash": "ad0c80a1944d5ebc60e6c582cf3e4a25",
     "packages": [
         {
             "name": "buzzingpixel/corbomite-cli",
@@ -143,16 +143,16 @@
         },
         {
             "name": "buzzingpixel/corbomite-twig",
-            "version": "1.0.0",
+            "version": "1.0.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/buzzingpixel/corbomite-twig.git",
-                "reference": "60f111e0e7b9b687a5cdcd2ad11f0a1166e0ca5e"
+                "reference": "8a491eb15d4712b2c21afe538c246c98f6e3b6a9"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/buzzingpixel/corbomite-twig/zipball/60f111e0e7b9b687a5cdcd2ad11f0a1166e0ca5e",
-                "reference": "60f111e0e7b9b687a5cdcd2ad11f0a1166e0ca5e",
+                "url": "https://api.github.com/repos/buzzingpixel/corbomite-twig/zipball/8a491eb15d4712b2c21afe538c246c98f6e3b6a9",
+                "reference": "8a491eb15d4712b2c21afe538c246c98f6e3b6a9",
                 "shasum": ""
             },
             "require": {
@@ -191,7 +191,52 @@
             ],
             "description": "Corbomite Twig",
             "homepage": "https://buzzingpixel.com/",
-            "time": "2018-12-30T21:31:59+00:00"
+            "time": "2018-12-30T23:18:54+00:00"
+        },
+        {
+            "name": "buzzingpixel/twig-switch",
+            "version": "1.0.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/buzzingpixel/twig-switch.git",
+                "reference": "b1b97f4f38655d13b4c1bb257db418a72ac06ae0"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/buzzingpixel/twig-switch/zipball/b1b97f4f38655d13b4c1bb257db418a72ac06ae0",
+                "reference": "b1b97f4f38655d13b4c1bb257db418a72ac06ae0",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=7.1",
+                "twig/twig": "^2.5"
+            },
+            "require-dev": {
+                "phpmd/phpmd": "^2.6",
+                "roave/security-advisories": "dev-master",
+                "squizlabs/php_codesniffer": "^3.4"
+            },
+            "type": "library",
+            "extra": {
+                "twigExtensions": [
+                    "buzzingpixel\\twigswitch\\SwitchTwigExtension"
+                ]
+            },
+            "autoload": {
+                "psr-4": {
+                    "buzzingpixel\\twigswitch\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "authors": [
+                {
+                    "name": "TJ Draper",
+                    "email": "tj@buzzingpixel.com",
+                    "homepage": "https://buzzingpixel.com"
+                }
+            ],
+            "description": "Provides a {% switch %} tag for Twig switch case statements",
+            "time": "2018-12-30T23:12:10+00:00"
         },
         {
             "name": "composer/ca-bundle",

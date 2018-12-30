@@ -3,3 +3,14 @@ Hello World
 someVar: {{ someVar }}
 <br><br>
 Dev Mode: {% if devMode %}true{% else %}false{% endif %}
+<br><br>
+<br><br>
+
+{% switch someVar %}
+    {% case 'someVal' %}
+        test someVal
+    {% case 'otherVal' %}
+        test otherVal
+    {% default %}
+        test default
+{% endswitch %}

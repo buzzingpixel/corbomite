@@ -11,7 +11,8 @@
         "buzzingpixel/corbomite-cli": "^1.0.2",
         "relay/relay": "2.x@dev",
         "buzzingpixel/corbomite-http": "^1.0.1",
-        "buzzingpixel/corbomite-twig": "^1.0"
+        "buzzingpixel/corbomite-twig": "^1.0.1",
+        "buzzingpixel/twig-switch": "^1.0.1"
     },
     "require-dev": {
         "roave/security-advisories": "dev-master",
