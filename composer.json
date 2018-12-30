@@ -10,7 +10,8 @@
         "buzzingpixel/corbomite-di": "^1.0",
         "buzzingpixel/corbomite-cli": "^1.0.2",
         "relay/relay": "2.x@dev",
-        "buzzingpixel/corbomite-http": "^1.0.1"
+        "buzzingpixel/corbomite-http": "^1.0.1",
+        "buzzingpixel/corbomite-twig": "^1.0"
     },
     "require-dev": {
         "roave/security-advisories": "dev-master",
@@ -29,7 +30,11 @@
     "extra": {
         "diConfigFilePath": "src/config/di/_collector.php",
         "httpRouteConfigFilePath": "src/config/http/routes.php",
-        "httpActionConfigFilePath": "src/config/http/actionParams.php"
+        "httpActionConfigFilePath": "src/config/http/actionParams.php",
+        "twigGlobalsFilePath": "src/config/http/globals.php",
+        "twigTemplatesDirectories": {
+            "": "src/app/http/views"
+        }
     },
     "scripts": {
         "post-create-project-cmd": [
