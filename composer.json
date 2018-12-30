@@ -26,6 +26,11 @@
     "config": {
         "optimize-autoloader": true
     },
+    "extra": {
+        "diConfigFilePath": "src/config/di/_collector.php",
+        "httpRouteConfigFilePath": "src/config/http/routes.php",
+        "httpActionConfigFilePath": "src/config/http/actionParams.php"
+    },
     "scripts": {
         "post-create-project-cmd": [
             "@php -r \"copy('.env.example', '.env');\"",

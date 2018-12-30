@@ -4,7 +4,6 @@
     "license": "Apache-2.0",
     "homepage": "https://buzzingpixel.com/",
     "type": "project",
-    "minimum-stability": "dev",
     "require": {
         "php": ">=7.2",
         "vlucas/phpdotenv": "^2.5",
@@ -26,5 +25,10 @@
     },
     "config": {
         "optimize-autoloader": true
+    },
+    "extra": {
+        "diConfigFilePath": "src/config/di/_collector.php",
+        "httpRouteConfigFilePath": "src/config/http/routes.php",
+        "httpActionConfigFilePath": "src/config/http/actionParams.php"
     }
 }
