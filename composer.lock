@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "6d4405796b46b83fa351e8e784a73741",
+    "content-hash": "05079515c41e0643be6114f963232965",
     "packages": [
         {
             "name": "buzzingpixel/corbomite-cli",
@@ -93,16 +93,16 @@
         },
         {
             "name": "buzzingpixel/corbomite-http",
-            "version": "1.0.1",
+            "version": "1.0.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/buzzingpixel/corbomite-http.git",
-                "reference": "ee67b58277716573637f3332ab73066e63f55ad7"
+                "reference": "71c302569877b0374c7bd12f331f6283b6d183e7"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/buzzingpixel/corbomite-http/zipball/ee67b58277716573637f3332ab73066e63f55ad7",
-                "reference": "ee67b58277716573637f3332ab73066e63f55ad7",
+                "url": "https://api.github.com/repos/buzzingpixel/corbomite-http/zipball/71c302569877b0374c7bd12f331f6283b6d183e7",
+                "reference": "71c302569877b0374c7bd12f331f6283b6d183e7",
                 "shasum": ""
             },
             "require": {
@@ -119,6 +119,7 @@
                 "zendframework/zend-httphandlerrunner": "^1.0"
             },
             "require-dev": {
+                "buzzingpixel/corbomite-twig": "^1.0",
                 "phpmd/phpmd": "^2.6",
                 "phpunit/phpunit": "^7.2",
                 "roave/security-advisories": "dev-master",
@@ -126,7 +127,10 @@
             },
             "type": "library",
             "extra": {
-                "diConfigFilePath": "src/diConfig.php"
+                "diConfigFilePath": "src/diConfig.php",
+                "twigExtensions": [
+                    "corbomite\\http\\HttpTwigExtension"
+                ]
             },
             "autoload": {
                 "psr-4": {
@@ -139,7 +143,7 @@
             ],
             "description": "Corbomite HTTP",
             "homepage": "https://buzzingpixel.com/",
-            "time": "2018-12-30T16:23:36+00:00"
+            "time": "2019-01-01T21:37:00+00:00"
         },
         {
             "name": "buzzingpixel/corbomite-twig",
