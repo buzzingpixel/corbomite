@@ -41,3 +41,10 @@ Dev Mode: {% if devMode %}true{% else %}false{% endif %}
 <br><br>
 
 ENV variable `DEV_MODE`: {{ getenv('DEV_MODE') }}
+
+<br><br>
+<br><br>
+
+Filetime: /app: {{ fileTime('/app') }}<br>
+Filetime: /index.php: {{ fileTime('/index.php') }}<br>
+Filetime: /noop: {{ fileTime('/noop') }}
