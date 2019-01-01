@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "05079515c41e0643be6114f963232965",
+    "content-hash": "00f87cf4d1a43eba972995739dda6be9",
     "packages": [
         {
             "name": "buzzingpixel/corbomite-cli",
@@ -196,6 +196,51 @@
             "description": "Corbomite Twig",
             "homepage": "https://buzzingpixel.com/",
             "time": "2018-12-30T23:18:54+00:00"
+        },
+        {
+            "name": "buzzingpixel/twig-getenv",
+            "version": "1.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/buzzingpixel/twig-getenv.git",
+                "reference": "564fa5d46cb122135059d5719e6ee64a7740ae4f"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/buzzingpixel/twig-getenv/zipball/564fa5d46cb122135059d5719e6ee64a7740ae4f",
+                "reference": "564fa5d46cb122135059d5719e6ee64a7740ae4f",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=7.1",
+                "twig/twig": "^2.5"
+            },
+            "require-dev": {
+                "phpmd/phpmd": "^2.6",
+                "roave/security-advisories": "dev-master",
+                "squizlabs/php_codesniffer": "^3.4"
+            },
+            "type": "library",
+            "extra": {
+                "twigExtensions": [
+                    "buzzingpixel\\twiggetenv\\GetEnvTwigExtension"
+                ]
+            },
+            "autoload": {
+                "psr-4": {
+                    "buzzingpixel\\twiggetenv\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "authors": [
+                {
+                    "name": "TJ Draper",
+                    "email": "tj@buzzingpixel.com",
+                    "homepage": "https://buzzingpixel.com"
+                }
+            ],
+            "description": "A Twig getenv function",
+            "time": "2019-01-01T21:52:32+00:00"
         },
         {
             "name": "buzzingpixel/twig-smartypants",
