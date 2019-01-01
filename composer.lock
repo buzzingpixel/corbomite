@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "6117ede70f02ff14e10f6b8a8c9ceb2a",
+    "content-hash": "6d4405796b46b83fa351e8e784a73741",
     "packages": [
         {
             "name": "buzzingpixel/corbomite-cli",
@@ -285,6 +285,54 @@
             ],
             "description": "Provides a {% switch %} tag for Twig switch case statements",
             "time": "2018-12-30T23:12:10+00:00"
+        },
+        {
+            "name": "buzzingpixel/twig-truncate",
+            "version": "1.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/buzzingpixel/twig-truncate.git",
+                "reference": "671027bc6a3257565afec0c4f47c7c68f65fc253"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/buzzingpixel/twig-truncate/zipball/671027bc6a3257565afec0c4f47c7c68f65fc253",
+                "reference": "671027bc6a3257565afec0c4f47c7c68f65fc253",
+                "shasum": ""
+            },
+            "require": {
+                "buzzingpixel/corbomite-di": "^1.0",
+                "php": ">=7.1",
+                "timostamm/text-truncation": "dev-master",
+                "twig/twig": "^2.5"
+            },
+            "require-dev": {
+                "phpmd/phpmd": "^2.6",
+                "roave/security-advisories": "dev-master",
+                "squizlabs/php_codesniffer": "^3.4"
+            },
+            "type": "library",
+            "extra": {
+                "diConfigFilePath": "src/diConfig.php",
+                "twigExtensions": [
+                    "buzzingpixel\\twigtruncate\\TruncateTwigExtension"
+                ]
+            },
+            "autoload": {
+                "psr-4": {
+                    "buzzingpixel\\twigtruncate\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "authors": [
+                {
+                    "name": "TJ Draper",
+                    "email": "tj@buzzingpixel.com",
+                    "homepage": "https://buzzingpixel.com"
+                }
+            ],
+            "description": "A Twig Truncate filter",
+            "time": "2019-01-01T21:17:57+00:00"
         },
         {
             "name": "buzzingpixel/twig-ucfirst",
@@ -2499,6 +2547,38 @@
             "time": "2018-11-20T16:22:05+00:00"
         },
         {
+            "name": "timostamm/text-truncation",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/timostamm/text-truncation.git",
+                "reference": "4eb77aaa04c16104196662c11aa4acb358397e8d"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/timostamm/text-truncation/zipball/4eb77aaa04c16104196662c11aa4acb358397e8d",
+                "reference": "4eb77aaa04c16104196662c11aa4acb358397e8d",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=7.1"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "~6.3"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "TS\\": "src/TS"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "AGPL-3.0"
+            ],
+            "time": "2017-10-03T16:11:05+00:00"
+        },
+        {
             "name": "twig/twig",
             "version": "v2.6.0",
             "source": {
@@ -4645,6 +4725,7 @@
     "minimum-stability": "stable",
     "stability-flags": {
         "relay/relay": 20,
+        "timostamm/text-truncation": 20,
         "roave/security-advisories": 20
     },
     "prefer-stable": false,

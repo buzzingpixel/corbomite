@@ -15,7 +15,9 @@
         "buzzingpixel/twig-switch": "^1.0.1",
         "buzzingpixel/twig-widont": "^1.0.1",
         "buzzingpixel/twig-smartypants": "^1.0",
-        "buzzingpixel/twig-ucfirst": "^1.0"
+        "buzzingpixel/twig-ucfirst": "^1.0",
+        "timostamm/text-truncation": "dev-master",
+        "buzzingpixel/twig-truncate": "^1.0"
     },
     "require-dev": {
         "roave/security-advisories": "dev-master",

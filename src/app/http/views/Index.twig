@@ -27,3 +27,10 @@ Dev Mode: {% if devMode %}true{% else %}false{% endif %}
 <br><br>
 
 {% filter ucfirst %}this <-- should be upper case first letter{% endfilter %}
+
+<br><br>
+<br><br>
+
+{% filter truncate(30) %}
+    lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam cumque dolorem enim error facere fuga hic magni nulla quaerat, quas, quidem ratione repellat voluptatem. Alias aperiam beatae consectetur qui sequi!
+{% endfilter %}
