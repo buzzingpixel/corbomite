@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "55ae2d7b809bedf9b7cefc6434c72c92",
+    "content-hash": "6117ede70f02ff14e10f6b8a8c9ceb2a",
     "packages": [
         {
             "name": "buzzingpixel/corbomite-cli",
@@ -285,6 +285,51 @@
             ],
             "description": "Provides a {% switch %} tag for Twig switch case statements",
             "time": "2018-12-30T23:12:10+00:00"
+        },
+        {
+            "name": "buzzingpixel/twig-ucfirst",
+            "version": "1.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/buzzingpixel/twig-ucfirst.git",
+                "reference": "991091b01e67f6e92c04ec7cf642a130812eda62"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/buzzingpixel/twig-ucfirst/zipball/991091b01e67f6e92c04ec7cf642a130812eda62",
+                "reference": "991091b01e67f6e92c04ec7cf642a130812eda62",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=7.1",
+                "twig/twig": "^2.5"
+            },
+            "require-dev": {
+                "phpmd/phpmd": "^2.6",
+                "roave/security-advisories": "dev-master",
+                "squizlabs/php_codesniffer": "^3.4"
+            },
+            "type": "library",
+            "extra": {
+                "twigExtensions": [
+                    "buzzingpixel\\twigucfirst\\UcFirstTwigExtension"
+                ]
+            },
+            "autoload": {
+                "psr-4": {
+                    "buzzingpixel\\twigucfirst\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "authors": [
+                {
+                    "name": "TJ Draper",
+                    "email": "tj@buzzingpixel.com",
+                    "homepage": "https://buzzingpixel.com"
+                }
+            ],
+            "description": "A Twig ucfirst filter",
+            "time": "2019-01-01T20:53:26+00:00"
         },
         {
             "name": "buzzingpixel/twig-widont",
