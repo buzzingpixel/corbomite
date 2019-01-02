@@ -1,7 +1,17 @@
+{# {% set cookie = makeCookie('TestCookie', 'Test Value') %}
+{% do saveCookie(cookie) %} #}
+
+{# {% set cookie = retrieveCookie('TestCookie') %}
+{{ dump(cookie.value) }} #}
+
 Hello World
+
 <br><br>
+
 someVar: {{ someVar }}
+
 <br><br>
+
 Dev Mode: {% if devMode %}true{% else %}false{% endif %}
 
 <br><br>

@@ -4,8 +4,57 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "539688381d544931f517decbf2dd6485",
+    "content-hash": "7170ffb9a3f4736b62a7982eb4111a75",
     "packages": [
+        {
+            "name": "buzzingpixel/cookie-api",
+            "version": "1.0.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/buzzingpixel/cookie-api.git",
+                "reference": "daede461f8b39c91e4702d542e0052237844f888"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/buzzingpixel/cookie-api/zipball/daede461f8b39c91e4702d542e0052237844f888",
+                "reference": "daede461f8b39c91e4702d542e0052237844f888",
+                "shasum": ""
+            },
+            "require": {
+                "buzzingpixel/corbomite-di": "^1.0",
+                "ext-json": "*",
+                "php": ">=7.1"
+            },
+            "require-dev": {
+                "phpmd/phpmd": "^2.6",
+                "phpunit/phpunit": "^7.5",
+                "roave/security-advisories": "dev-master",
+                "squizlabs/php_codesniffer": "^3.4",
+                "twig/twig": "^2.6"
+            },
+            "type": "library",
+            "extra": {
+                "diConfigFilePath": "src/diConfig.php",
+                "twigExtensions": [
+                    "buzzingpixel\\cookieapi\\CookieApiTwigExtension"
+                ]
+            },
+            "autoload": {
+                "psr-4": {
+                    "buzzingpixel\\cookieapi\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "authors": [
+                {
+                    "name": "TJ Draper",
+                    "email": "tj@buzzingpixel.com",
+                    "homepage": "https://buzzingpixel.com"
+                }
+            ],
+            "description": "Cookie API",
+            "time": "2019-01-02T00:20:02+00:00"
+        },
         {
             "name": "buzzingpixel/corbomite-cli",
             "version": "1.0.2",

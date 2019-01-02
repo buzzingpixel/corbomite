@@ -19,7 +19,8 @@
         "timostamm/text-truncation": "dev-master",
         "buzzingpixel/twig-truncate": "^1.0",
         "buzzingpixel/twig-getenv": "^1.0",
-        "buzzingpixel/twig-filetime": "^1.0"
+        "buzzingpixel/twig-filetime": "^1.0",
+        "buzzingpixel/cookie-api": "^1.0.1"
     },
     "require-dev": {
         "roave/security-advisories": "dev-master",
