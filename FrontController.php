@@ -23,5 +23,5 @@ if (PHP_SAPI === 'cli') {
 }
 
 /** @noinspection PhpUnhandledExceptionInspection */
-Di::get(HttpKernel::class)($argv);
+Di::get(HttpKernel::class)();
 exit();
