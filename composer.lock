@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "c6cec7297d230d20d903c7a5c6ee39cd",
+    "content-hash": "91e74d23d7b432b21592a037f0b980fd",
     "packages": [
         {
             "name": "buzzingpixel/cookie-api",
@@ -196,16 +196,16 @@
         },
         {
             "name": "buzzingpixel/corbomite-migrations",
-            "version": "1.0.0",
+            "version": "1.0.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/buzzingpixel/corbomite-migrations.git",
-                "reference": "c68fef677f27ccd3ea83265f886c1fb893aae53c"
+                "reference": "960f0d14f5d164ce4bf714f25f60d3c59536f179"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/buzzingpixel/corbomite-migrations/zipball/c68fef677f27ccd3ea83265f886c1fb893aae53c",
-                "reference": "c68fef677f27ccd3ea83265f886c1fb893aae53c",
+                "url": "https://api.github.com/repos/buzzingpixel/corbomite-migrations/zipball/960f0d14f5d164ce4bf714f25f60d3c59536f179",
+                "reference": "960f0d14f5d164ce4bf714f25f60d3c59536f179",
                 "shasum": ""
             },
             "require": {
@@ -239,7 +239,7 @@
                 }
             ],
             "description": "Corbomite migrations",
-            "time": "2019-01-02T05:55:43+00:00"
+            "time": "2019-01-05T22:49:16+00:00"
         },
         {
             "name": "buzzingpixel/corbomite-twig",
