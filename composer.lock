@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "91e74d23d7b432b21592a037f0b980fd",
+    "content-hash": "da1b80a16fa6dda5796059c6362fd25a",
     "packages": [
         {
             "name": "buzzingpixel/cookie-api",
@@ -243,16 +243,16 @@
         },
         {
             "name": "buzzingpixel/corbomite-twig",
-            "version": "1.0.1",
+            "version": "1.0.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/buzzingpixel/corbomite-twig.git",
-                "reference": "8a491eb15d4712b2c21afe538c246c98f6e3b6a9"
+                "reference": "7069e59338e243f1b2c5a404137d750aab0de22f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/buzzingpixel/corbomite-twig/zipball/8a491eb15d4712b2c21afe538c246c98f6e3b6a9",
-                "reference": "8a491eb15d4712b2c21afe538c246c98f6e3b6a9",
+                "url": "https://api.github.com/repos/buzzingpixel/corbomite-twig/zipball/7069e59338e243f1b2c5a404137d750aab0de22f",
+                "reference": "7069e59338e243f1b2c5a404137d750aab0de22f",
                 "shasum": ""
             },
             "require": {
@@ -291,7 +291,7 @@
             ],
             "description": "Corbomite Twig",
             "homepage": "https://buzzingpixel.com/",
-            "time": "2018-12-30T23:18:54+00:00"
+            "time": "2019-01-05T23:15:01+00:00"
         },
         {
             "name": "buzzingpixel/twig-filetime",

@@ -11,7 +11,7 @@
         "buzzingpixel/corbomite-cli": "^1.0.2",
         "relay/relay": "2.x@dev",
         "buzzingpixel/corbomite-http": "^1.0.3",
-        "buzzingpixel/corbomite-twig": "^1.0.1",
+        "buzzingpixel/corbomite-twig": "^1.0.2",
         "buzzingpixel/twig-switch": "^1.0.1",
         "buzzingpixel/twig-widont": "^1.0.1",
         "buzzingpixel/twig-smartypants": "^1.0",
