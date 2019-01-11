@@ -23,7 +23,8 @@
         "buzzingpixel/cookie-api": "^1.0.1",
         "buzzingpixel/corbomite-db": "^1.0",
         "buzzingpixel/corbomite-migrations": "^1.0.1",
-        "buzzingpixel/corbomite-queue": "^1.0"
+        "buzzingpixel/corbomite-queue": "^1.0",
+        "buzzingpixel/corbomite-schedule": "^1.0"
     },
     "require-dev": {
         "roave/security-advisories": "dev-master",
@@ -43,6 +44,7 @@
         "diConfigFilePath": "src/config/di/_collector.php",
         "httpRouteConfigFilePath": "src/config/http/routes.php",
         "httpActionConfigFilePath": "src/config/http/actionParams.php",
+        "scheduleConfigFilePath": "src/config/scheduleConfig.php",
         "twigGlobalsFilePath": "src/config/http/globals.php",
         "twigTemplatesDirectories": {
             "": "src/app/http/views"
