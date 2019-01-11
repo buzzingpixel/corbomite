@@ -9,6 +9,7 @@ use corbomite\http\Kernel as HttpKernel;
 
 define('APP_BASE_PATH', __DIR__);
 define('APP_VENDOR_PATH', APP_BASE_PATH . '/vendor');
+putenv('TWIG_CACHE_PATH=' . APP_BASE_PATH . '/cache/twig');
 
 require APP_VENDOR_PATH . '/autoload.php';
 
