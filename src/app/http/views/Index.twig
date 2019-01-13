@@ -1,60 +1,64 @@
-{# {% set cookie = makeCookie('TestCookie', 'Test Value') %}
-{% do saveCookie(cookie) %} #}
+{% extends 'layouts/LayoutMaster.twig' %}
 
-{# {% set cookie = retrieveCookie('TestCookie') %}
-{{ dump(cookie.value) }} #}
+{% block content %}
+    {# {% set cookie = makeCookie('TestCookie', 'Test Value') %}
+    {% do saveCookie(cookie) %} #}
 
-Hello World
+    {# {% set cookie = retrieveCookie('TestCookie') %}
+    {{ dump(cookie.value) }} #}
 
-<br><br>
+    Hello World
 
-someVar: {{ someVar }}
+    <br><br>
 
-<br><br>
+    someVar: {{ someVar }}
 
-Dev Mode: {% if devMode %}true{% else %}false{% endif %}
+    <br><br>
 
-<br><br>
-<br><br>
+    Dev Mode: {% if devMode %}true{% else %}false{% endif %}
 
-{% switch someVar %}
-    {% case 'someVal' %}
-        test someVal
-    {% case 'otherVal' %}
-        test otherVal
-    {% default %}
-        test default
-{% endswitch %}
+    <br><br>
+    <br><br>
 
-<br><br>
-<br><br>
+    {% switch someVar %}
+        {% case 'someVal' %}
+            test someVal
+        {% case 'otherVal' %}
+            test otherVal
+        {% default %}
+            test default
+    {% endswitch %}
 
-{% filter widont|smartypants %}
-    <p>Lorem ipsum dolor sit amet, consectetur's adipisicing elit. Aliquam "cumque dolorem" enim error facere fuga hic magni nulla quaerat, quas, quidem ratione repellat voluptatem. Alias aperiam beatae consectetur qui sequi!</p>
-{% endfilter %}
+    <br><br>
+    <br><br>
 
-<br><br>
-<br><br>
+    {% filter widont|smartypants %}
+        <p>Lorem ipsum dolor sit amet, consectetur's adipisicing elit. Aliquam "cumque dolorem" enim error facere fuga hic magni nulla quaerat, quas, quidem ratione repellat voluptatem. Alias aperiam beatae consectetur qui sequi!</p>
+    {% endfilter %}
 
-{% filter ucfirst %}this <-- should be upper case first letter{% endfilter %}
+    <br><br>
+    <br><br>
 
-<br><br>
-<br><br>
+    {% filter ucfirst %}this <-- should be upper case first letter{% endfilter %}
 
-{% filter truncate(30) %}
-    lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam cumque dolorem enim error facere fuga hic magni nulla quaerat, quas, quidem ratione repellat voluptatem. Alias aperiam beatae consectetur qui sequi!
-{% endfilter %}
+    <br><br>
+    <br><br>
 
-{# {% do throwHttpError() %} #}
+    {% filter truncate(30) %}
+        lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam cumque dolorem enim error facere fuga hic magni nulla quaerat, quas, quidem ratione repellat voluptatem. Alias aperiam beatae consectetur qui sequi!
+    {% endfilter %}
 
-<br><br>
-<br><br>
+    {# {% do throwHttpError() %} #}
 
-ENV variable `DEV_MODE`: {{ getenv('DEV_MODE') }}
+    <br><br>
+    <br><br>
 
-<br><br>
-<br><br>
+    ENV variable `DEV_MODE`: {{ getenv('DEV_MODE') }}
 
-Filetime: /app: {{ fileTime('/app') }}<br>
-Filetime: /index.php: {{ fileTime('/index.php') }}<br>
-Filetime: /noop: {{ fileTime('/noop') }}
+    <br><br>
+    <br><br>
+
+    Filetime: /app: {{ fileTime('/app') }}<br>
+    Filetime: /index.php: {{ fileTime('/index.php') }}<br>
+    Filetime: /noop: {{ fileTime('/noop') }}
+{% endblock %}
