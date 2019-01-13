@@ -18,6 +18,10 @@ services:
       - ./dev/null:/app/.idea:delegated
       - ./dev/null:/app/node_modules:delegated
       - ${DOCKER_NGINX_CONF_FILE}:/etc/nginx/conf.d/site.conf:delegated
+    networks:
+      common:
+        aliases:
+          - ${SERVER_NAME_ALIAS}
   php:
     image: buzzingpixel/php7.2:latest
     container_name: php-corbomite
@@ -34,6 +38,8 @@ services:
       - ./dev/null:/app/node_modules:delegated
       - ./serverConfig/php/php-custom-config.ini:/usr/local/etc/php/conf.d/php-custom-config.ini:delegated
       - ${DOCKER_PHP_ENV_INI_FILE}:/usr/local/etc/php/conf.d/php-env-config.ini:delegated
+    networks:
+      common:
   db:
     image: buzzingpixel/mariadb:latest
     container_name: db-corbomite
@@ -57,12 +63,22 @@ services:
       - db-data:/var/lib/mysql
     ports:
       - "${DOCKER_DB_PORT}:3306"
+    networks:
+      common:
   node:
     image: node:latest
     container_name: node-corbomite
     ports:
       - "3000:3000"
       - "3001:3001"
+      - "3002:3002"
+      - "3003:3003"
+      - "3004:3004"
+      - "3005:3005"
+      - "3006:3006"
+      - "3007:3007"
+      - "3008:3008"
+      - "3009:3009"
     volumes:
       - ${DOCKER_RSA_FILE}:/tmp/.ssh/id_rsa:delegated
       - ${DOCKER_RSA_PUB_FILE}:/tmp/.ssh/id_rsa.pub:delegated
@@ -74,6 +90,8 @@ services:
       - db-data:/var/lib/mysql
       - node-data:/app/node_modules
     command: bash -c "sleep infinity & wait"
+    networks:
+      common:
   utility:
     image: buzzingpixel/utility:latest
     container_name: utility-corbomite
@@ -87,9 +105,14 @@ services:
       - vendor-data:/vendor-volume
       - db-data:/var/lib/mysql
     command: bash -c "/app/scripts/devUtilityScript.sh"
+    networks:
+      common:
 
 volumes:
   vendor-data:
   cache-data:
   db-data:
   node-data:
+
+networks:
+  common:

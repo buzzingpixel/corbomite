@@ -52,10 +52,39 @@
         }
     },
     "scripts": {
+        "run-docker":  [
+            "docker-compose up -d"
+        ],
+        "queue-run":  [
+            "docker exec -i --user root php-corbomite bash -c \"php /app/app queue/run\""
+        ],
+        "queue-watch":  [
+            "@run-docker",
+            "docker exec -i --user root php-corbomite bash -c \"/app/queueRunner.sh\""
+        ],
+        "kill-queue-watch":  [
+            "docker kill php-corbomite",
+            "@run-docker"
+        ],
+        "run-schedule":  [
+            "docker exec -i --user root php-corbomite bash -c \"php /app/app schedule/run\""
+        ],
+        "npm-install": [
+            "npm install",
+            "docker-compose up -d",
+            "docker exec -i --user root --workdir /app node-corbomite bash -c \"npm install\""
+        ],
+        "fab": [
+            "@run-docker",
+            "@kill-fab",
+            "docker start node-corbomite",
+            "docker exec -i --user root --workdir /app node-corbomite bash -c \"npm run fab \""
+        ],
+        "kill-fab":  [
+            "docker kill node-corbomite"
+        ],
         "post-create-project-cmd": [
             "@php -r \"copy('.env.example', '.env');\"",
-            "@php -r \"unlink('composer.json');\"",
-            "@php -r \"rename('composer.json.default', 'composer.json');\"",
             "@composer dump-autoload -o"
         ]
     }

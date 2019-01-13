@@ -1,0 +1,8 @@
+{
+    "proxy": "http://corbomite.test",
+    "watch": [
+        "config/**",
+        "src/**"
+    ],
+    "watchUsesPolling": true
+}
