@@ -55,6 +55,9 @@
         "run-docker":  [
             "docker-compose up -d"
         ],
+        "stop-docker":  [
+            "docker-compose down"
+        ],
         "queue-run":  [
             "docker exec -i --user root php-corbomite bash -c \"php /app/app queue/run\""
         ],
@@ -82,6 +85,9 @@
         ],
         "kill-fab":  [
             "docker kill node-corbomite"
+        ],
+        "test":  [
+            "docker exec -i --user root php-corbomite bash -c \"/app/vendor/bin/phpunit\""
         ],
         "post-create-project-cmd": [
             "@php -r \"copy('.env.example', '.env');\"",
