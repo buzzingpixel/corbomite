@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "8a564581c013c204adc7312f1ce998c0",
+    "content-hash": "8f8e65f7d3871c73b6c7cfaafdebe743",
     "packages": [
         {
             "name": "atlas/cli",
@@ -950,16 +950,16 @@
         },
         {
             "name": "buzzingpixel/request-data-store",
-            "version": "1.0.0",
+            "version": "1.0.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/buzzingpixel/request-data-store.git",
-                "reference": "663399fb734cf430b0c9f0267f63eb650895a1fa"
+                "reference": "e461159c5de8ec1c1e2319d1a8025a6fc4e002f6"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/buzzingpixel/request-data-store/zipball/663399fb734cf430b0c9f0267f63eb650895a1fa",
-                "reference": "663399fb734cf430b0c9f0267f63eb650895a1fa",
+                "url": "https://api.github.com/repos/buzzingpixel/request-data-store/zipball/e461159c5de8ec1c1e2319d1a8025a6fc4e002f6",
+                "reference": "e461159c5de8ec1c1e2319d1a8025a6fc4e002f6",
                 "shasum": ""
             },
             "require": {
@@ -994,7 +994,7 @@
                 }
             ],
             "description": "Request Data Store",
-            "time": "2019-01-14T22:18:46+00:00"
+            "time": "2019-01-14T22:37:19+00:00"
         },
         {
             "name": "buzzingpixel/twig-filetime",
@@ -3570,16 +3570,16 @@
         },
         {
             "name": "twig/twig",
-            "version": "v2.6.0",
+            "version": "v2.6.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/twigphp/Twig.git",
-                "reference": "a11dd39f5b6589e14f0ff3b36675d06047c589b1"
+                "reference": "7d7342c8a4059fefb9b8d07db0cc14007021f9b7"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/twigphp/Twig/zipball/a11dd39f5b6589e14f0ff3b36675d06047c589b1",
-                "reference": "a11dd39f5b6589e14f0ff3b36675d06047c589b1",
+                "url": "https://api.github.com/repos/twigphp/Twig/zipball/7d7342c8a4059fefb9b8d07db0cc14007021f9b7",
+                "reference": "7d7342c8a4059fefb9b8d07db0cc14007021f9b7",
                 "shasum": ""
             },
             "require": {
@@ -3633,7 +3633,7 @@
             "keywords": [
                 "templating"
             ],
-            "time": "2018-12-16T10:36:48+00:00"
+            "time": "2019-01-14T15:00:48+00:00"
         },
         {
             "name": "vlucas/phpdotenv",
