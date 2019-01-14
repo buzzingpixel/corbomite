@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "6ecef98247b41b9890eaafc9f017a68e",
+    "content-hash": "277947e5478caff8ac5123b4a42df277",
     "packages": [
         {
             "name": "atlas/cli",
@@ -592,6 +592,62 @@
             "description": "Corbomite DI",
             "homepage": "https://buzzingpixel.com/",
             "time": "2019-01-11T22:13:36+00:00"
+        },
+        {
+            "name": "buzzingpixel/corbomite-flash-data",
+            "version": "1.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/buzzingpixel/corbomite-flash-data.git",
+                "reference": "fc2dd198ca12117812af6fcebca287a66fa16200"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/buzzingpixel/corbomite-flash-data/zipball/fc2dd198ca12117812af6fcebca287a66fa16200",
+                "reference": "fc2dd198ca12117812af6fcebca287a66fa16200",
+                "shasum": ""
+            },
+            "require": {
+                "buzzingpixel/cookie-api": "^1.1",
+                "buzzingpixel/corbomite-db": "^1.0",
+                "buzzingpixel/corbomite-di": "^1.0",
+                "buzzingpixel/corbomite-migrations": "^1.0",
+                "ext-json": "*",
+                "php": ">=7.1",
+                "ramsey/uuid": "^3.8"
+            },
+            "require-dev": {
+                "buzzingpixel/corbomite-schedule": "^1.0",
+                "phpmd/phpmd": "^2.6",
+                "phpunit/phpunit": "^7.5",
+                "roave/security-advisories": "dev-master",
+                "squizlabs/php_codesniffer": "^3.4",
+                "twig/twig": "^2.6"
+            },
+            "type": "library",
+            "extra": {
+                "diConfigFilePath": "src/diConfig.php",
+                "cliActionConfigFilePath": "src/actionConfig.php",
+                "scheduleConfigFilePath": "src/scheduleConfig.php",
+                "twigExtensions": [
+                    "corbomite\\flashdata\\twigextensions\\FlashDataTwigExtension"
+                ]
+            },
+            "autoload": {
+                "psr-4": {
+                    "corbomite\\flashdata\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "authors": [
+                {
+                    "name": "TJ Draper",
+                    "email": "tj@buzzingpixel.com",
+                    "homepage": "https://buzzingpixel.com"
+                }
+            ],
+            "description": "Corbomite Flash Data",
+            "time": "2019-01-14T21:36:35+00:00"
         },
         {
             "name": "buzzingpixel/corbomite-http",
