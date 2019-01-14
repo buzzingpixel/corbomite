@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "277947e5478caff8ac5123b4a42df277",
+    "content-hash": "8a564581c013c204adc7312f1ce998c0",
     "packages": [
         {
             "name": "atlas/cli",
@@ -947,6 +947,54 @@
             ],
             "description": "Corbomite User",
             "time": "2019-01-11T21:23:07+00:00"
+        },
+        {
+            "name": "buzzingpixel/request-data-store",
+            "version": "1.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/buzzingpixel/request-data-store.git",
+                "reference": "663399fb734cf430b0c9f0267f63eb650895a1fa"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/buzzingpixel/request-data-store/zipball/663399fb734cf430b0c9f0267f63eb650895a1fa",
+                "reference": "663399fb734cf430b0c9f0267f63eb650895a1fa",
+                "shasum": ""
+            },
+            "require": {
+                "buzzingpixel/corbomite-di": "^1.0",
+                "php": ">=7.1"
+            },
+            "require-dev": {
+                "phpmd/phpmd": "^2.6",
+                "phpunit/phpunit": "^7.5",
+                "roave/security-advisories": "dev-master",
+                "squizlabs/php_codesniffer": "^3.4",
+                "twig/twig": "^2.6"
+            },
+            "type": "library",
+            "extra": {
+                "diConfigFilePath": "src/diConfig.php",
+                "twigExtensions": [
+                    "corbomite\\requestdatastore\\DataStoreTwigExtension"
+                ]
+            },
+            "autoload": {
+                "psr-4": {
+                    "corbomite\\requestdatastore\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "authors": [
+                {
+                    "name": "TJ Draper",
+                    "email": "tj@buzzingpixel.com",
+                    "homepage": "https://buzzingpixel.com"
+                }
+            ],
+            "description": "Request Data Store",
+            "time": "2019-01-14T22:18:46+00:00"
         },
         {
             "name": "buzzingpixel/twig-filetime",

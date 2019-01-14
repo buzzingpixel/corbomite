@@ -26,7 +26,8 @@
         "buzzingpixel/corbomite-queue": "^1.0",
         "buzzingpixel/corbomite-schedule": "^1.0.2",
         "buzzingpixel/corbomite-user": "^1.0",
-        "buzzingpixel/corbomite-flash-data": "^1.0"
+        "buzzingpixel/corbomite-flash-data": "^1.0",
+        "buzzingpixel/request-data-store": "^1.0"
     },
     "require-dev": {
         "roave/security-advisories": "dev-master",
