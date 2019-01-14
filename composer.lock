@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "8f8e65f7d3871c73b6c7cfaafdebe743",
+    "content-hash": "03247bb0e91f26ed0ffe7f6b4aefc3e8",
     "packages": [
         {
             "name": "atlas/cli",
@@ -595,16 +595,16 @@
         },
         {
             "name": "buzzingpixel/corbomite-flash-data",
-            "version": "1.0.0",
+            "version": "1.0.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/buzzingpixel/corbomite-flash-data.git",
-                "reference": "fc2dd198ca12117812af6fcebca287a66fa16200"
+                "reference": "cea489bb186aebb641bbeba1363989e5e0a507f3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/buzzingpixel/corbomite-flash-data/zipball/fc2dd198ca12117812af6fcebca287a66fa16200",
-                "reference": "fc2dd198ca12117812af6fcebca287a66fa16200",
+                "url": "https://api.github.com/repos/buzzingpixel/corbomite-flash-data/zipball/cea489bb186aebb641bbeba1363989e5e0a507f3",
+                "reference": "cea489bb186aebb641bbeba1363989e5e0a507f3",
                 "shasum": ""
             },
             "require": {
@@ -647,7 +647,7 @@
                 }
             ],
             "description": "Corbomite Flash Data",
-            "time": "2019-01-14T21:36:35+00:00"
+            "time": "2019-01-14T23:18:18+00:00"
         },
         {
             "name": "buzzingpixel/corbomite-http",
