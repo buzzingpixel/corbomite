@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "03247bb0e91f26ed0ffe7f6b4aefc3e8",
+    "content-hash": "24cd2a0db1836d0d62f239aba8bf362f",
     "packages": [
         {
             "name": "atlas/cli",
@@ -899,38 +899,47 @@
         },
         {
             "name": "buzzingpixel/corbomite-user",
-            "version": "1.0.0",
+            "version": "1.1.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/buzzingpixel/corbomite-user.git",
-                "reference": "e39b7b504b6d1b3b4d5eae1c67096a3a1a65ea99"
+                "reference": "6d90b376b583de8456ece0bba3c6bc9d90d48829"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/buzzingpixel/corbomite-user/zipball/e39b7b504b6d1b3b4d5eae1c67096a3a1a65ea99",
-                "reference": "e39b7b504b6d1b3b4d5eae1c67096a3a1a65ea99",
+                "url": "https://api.github.com/repos/buzzingpixel/corbomite-user/zipball/6d90b376b583de8456ece0bba3c6bc9d90d48829",
+                "reference": "6d90b376b583de8456ece0bba3c6bc9d90d48829",
                 "shasum": ""
             },
             "require": {
-                "buzzingpixel/cookie-api": "^1.0",
+                "buzzingpixel/cookie-api": "^1.1",
                 "buzzingpixel/corbomite-db": "^1.0",
                 "buzzingpixel/corbomite-di": "^1.0",
+                "buzzingpixel/corbomite-flash-data": "^1.0.1",
                 "buzzingpixel/corbomite-migrations": "^1.0",
+                "buzzingpixel/request-data-store": "^1.0.1",
+                "ext-json": "*",
                 "php": ">=7.1",
-                "ramsey/uuid": "^3.8"
+                "ramsey/uuid": "^3.8",
+                "zendframework/zend-diactoros": "^1.8"
             },
             "require-dev": {
                 "buzzingpixel/corbomite-schedule": "^1.0.1",
                 "phpmd/phpmd": "^2.6",
                 "phpunit/phpunit": "^7.5",
                 "roave/security-advisories": "dev-master",
-                "squizlabs/php_codesniffer": "^3.4"
+                "squizlabs/php_codesniffer": "^3.4",
+                "twig/twig": "^2.6"
             },
             "type": "library",
             "extra": {
                 "diConfigFilePath": "src/diConfig.php",
                 "cliActionConfigFilePath": "src/cliActionConfig.php",
-                "scheduleConfigFilePath": "src/scheduleConfig.php"
+                "scheduleConfigFilePath": "src/scheduleConfig.php",
+                "httpActionConfigFilePath": "src/httpActionConfig.php",
+                "twigExtensions": [
+                    "corbomite\\flashdata\\twigextensions\\UserTwigExtension"
+                ]
             },
             "autoload": {
                 "psr-4": {
@@ -946,7 +955,7 @@
                 }
             ],
             "description": "Corbomite User",
-            "time": "2019-01-11T21:23:07+00:00"
+            "time": "2019-01-15T02:29:34+00:00"
         },
         {
             "name": "buzzingpixel/request-data-store",
