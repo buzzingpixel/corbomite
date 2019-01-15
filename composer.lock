@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "24cd2a0db1836d0d62f239aba8bf362f",
+    "content-hash": "3b0ae95f89dd142b3f7887f1c2a1b344",
     "packages": [
         {
             "name": "atlas/cli",
@@ -899,16 +899,16 @@
         },
         {
             "name": "buzzingpixel/corbomite-user",
-            "version": "1.1.1",
+            "version": "1.1.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/buzzingpixel/corbomite-user.git",
-                "reference": "6d90b376b583de8456ece0bba3c6bc9d90d48829"
+                "reference": "1b43a29d4e92a13ea2c180f29d12f4779add1a20"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/buzzingpixel/corbomite-user/zipball/6d90b376b583de8456ece0bba3c6bc9d90d48829",
-                "reference": "6d90b376b583de8456ece0bba3c6bc9d90d48829",
+                "url": "https://api.github.com/repos/buzzingpixel/corbomite-user/zipball/1b43a29d4e92a13ea2c180f29d12f4779add1a20",
+                "reference": "1b43a29d4e92a13ea2c180f29d12f4779add1a20",
                 "shasum": ""
             },
             "require": {
@@ -938,7 +938,7 @@
                 "scheduleConfigFilePath": "src/scheduleConfig.php",
                 "httpActionConfigFilePath": "src/httpActionConfig.php",
                 "twigExtensions": [
-                    "corbomite\\flashdata\\twigextensions\\UserTwigExtension"
+                    "corbomite\\user\\twigextensions\\UserTwigExtension"
                 ]
             },
             "autoload": {
@@ -955,7 +955,7 @@
                 }
             ],
             "description": "Corbomite User",
-            "time": "2019-01-15T02:29:34+00:00"
+            "time": "2019-01-15T02:38:48+00:00"
         },
         {
             "name": "buzzingpixel/request-data-store",
