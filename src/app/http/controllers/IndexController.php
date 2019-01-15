@@ -3,6 +3,7 @@ declare(strict_types=1);
 
 namespace src\app\http\controllers;
 
+use Throwable;
 use corbomite\twig\TwigEnvironment;
 use Psr\Http\Message\ResponseInterface;
 
@@ -19,12 +20,15 @@ class IndexController
         $this->twigEnvironment = $twigEnvironment;
     }
 
+    /**
+     * @throws Throwable
+     */
     public function __invoke(): ResponseInterface
     {
         $response = $this->response->withHeader('Content-Type', 'text/html');
 
         $response->getBody()->write(
-            $this->twigEnvironment->render('Index.twig', [
+            $this->twigEnvironment->renderAndMinify('Index.twig', [
                 'someVar' => 'someVal',
             ])
         );
