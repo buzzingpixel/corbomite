@@ -1,6 +1,7 @@
 #!/usr/bin/env bash
 
 while true; do
+    rm -rf /app/cache/twig/*;
     chmod -R 0777 /app/cache;
     chmod -R 0777 /var/lib/mysql;
     chmod -R 0777 /app/public/cache;
