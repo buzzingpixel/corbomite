@@ -4,22 +4,22 @@
  */
 declare(strict_types=1);
 
-namespace src\app\data\User;
+namespace src\app\data\FlashDatum;
 
 use Atlas\Table\Table;
 
 /**
- * @method UserRow|null fetchRow($primaryVal)
- * @method UserRow[] fetchRows(array $primaryVals)
- * @method UserTableSelect select(array $whereEquals = [])
- * @method UserRow newRow(array $cols = [])
- * @method UserRow newSelectedRow(array $cols)
+ * @method FlashDatumRow|null fetchRow($primaryVal)
+ * @method FlashDatumRow[] fetchRows(array $primaryVals)
+ * @method FlashDatumTableSelect select(array $whereEquals = [])
+ * @method FlashDatumRow newRow(array $cols = [])
+ * @method FlashDatumRow newSelectedRow(array $cols)
  */
-class UserTable extends Table
+class FlashDatumTable extends Table
 {
     const DRIVER = 'mysql';
 
-    const NAME = 'users';
+    const NAME = 'flash_data';
 
     const COLUMNS = [
         'guid' => [
@@ -33,30 +33,19 @@ class UserTable extends Table
             'primary' => true,
             'options' => null,
         ],
-        'email_address' => [
-            'name' => 'email_address',
+        'name' => [
+            'name' => 'name',
             'type' => 'text',
             'size' => 65535,
             'scale' => null,
-            'notnull' => true,
-            'default' => null,
+            'notnull' => false,
+            'default' => 'NULL',
             'autoinc' => false,
             'primary' => false,
             'options' => null,
         ],
-        'password_hash' => [
-            'name' => 'password_hash',
-            'type' => 'varchar',
-            'size' => 255,
-            'scale' => null,
-            'notnull' => true,
-            'default' => null,
-            'autoinc' => false,
-            'primary' => false,
-            'options' => null,
-        ],
-        'user_data' => [
-            'name' => 'user_data',
+        'data' => [
+            'name' => 'data',
             'type' => 'text',
             'size' => 65535,
             'scale' => null,
@@ -71,8 +60,8 @@ class UserTable extends Table
             'type' => 'datetime',
             'size' => null,
             'scale' => null,
-            'notnull' => true,
-            'default' => null,
+            'notnull' => false,
+            'default' => 'NULL',
             'autoinc' => false,
             'primary' => false,
             'options' => null,
@@ -82,8 +71,8 @@ class UserTable extends Table
             'type' => 'varchar',
             'size' => 255,
             'scale' => null,
-            'notnull' => true,
-            'default' => null,
+            'notnull' => false,
+            'default' => 'NULL',
             'autoinc' => false,
             'primary' => false,
             'options' => null,
@@ -92,20 +81,18 @@ class UserTable extends Table
 
     const COLUMN_NAMES = [
         'guid',
-        'email_address',
-        'password_hash',
-        'user_data',
+        'name',
+        'data',
         'added_at',
         'added_at_time_zone',
     ];
 
     const COLUMN_DEFAULTS = [
         'guid' => null,
-        'email_address' => null,
-        'password_hash' => null,
-        'user_data' => 'NULL',
-        'added_at' => null,
-        'added_at_time_zone' => null,
+        'name' => 'NULL',
+        'data' => 'NULL',
+        'added_at' => 'NULL',
+        'added_at_time_zone' => 'NULL',
     ];
 
     const PRIMARY_KEY = [
