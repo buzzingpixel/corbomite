@@ -4,20 +4,20 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "99b7e4f10a29e240ccc3c5215e0a9e5f",
+    "content-hash": "63c541341c4a69a48059e66b714833f5",
     "packages": [
         {
             "name": "atlas/cli",
-            "version": "2.2.0",
+            "version": "2.2.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/atlasphp/Atlas.Cli.git",
-                "reference": "7f776a3f12e90d9a825f6c78e093afd8f0b484e8"
+                "reference": "e307cc1ab1b81bb32a30507f76906029f4ce5153"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/atlasphp/Atlas.Cli/zipball/7f776a3f12e90d9a825f6c78e093afd8f0b484e8",
-                "reference": "7f776a3f12e90d9a825f6c78e093afd8f0b484e8",
+                "url": "https://api.github.com/repos/atlasphp/Atlas.Cli/zipball/e307cc1ab1b81bb32a30507f76906029f4ce5153",
+                "reference": "e307cc1ab1b81bb32a30507f76906029f4ce5153",
                 "shasum": ""
             },
             "require": {
@@ -58,20 +58,20 @@
                 "orm",
                 "sql"
             ],
-            "time": "2018-07-28T13:34:49+00:00"
+            "time": "2019-01-22T15:57:16+00:00"
         },
         {
             "name": "atlas/info",
-            "version": "1.1.0",
+            "version": "1.2.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/atlasphp/Atlas.Info.git",
-                "reference": "077f1c8c649d5ad56e78c13011d8832eb48033b7"
+                "reference": "6c198cc63b19950d25d009e2d7679449407b8183"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/atlasphp/Atlas.Info/zipball/077f1c8c649d5ad56e78c13011d8832eb48033b7",
-                "reference": "077f1c8c649d5ad56e78c13011d8832eb48033b7",
+                "url": "https://api.github.com/repos/atlasphp/Atlas.Info/zipball/6c198cc63b19950d25d009e2d7679449407b8183",
+                "reference": "6c198cc63b19950d25d009e2d7679449407b8183",
                 "shasum": ""
             },
             "require": {
@@ -101,7 +101,7 @@
                 "schema",
                 "sql"
             ],
-            "time": "2018-06-29T16:40:45+00:00"
+            "time": "2019-01-22T22:17:54+00:00"
         },
         {
             "name": "atlas/mapper",
@@ -511,16 +511,16 @@
         },
         {
             "name": "buzzingpixel/corbomite-db",
-            "version": "1.1.0",
+            "version": "1.2.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/buzzingpixel/corbomite-db.git",
-                "reference": "4fc0652fdc811441f479ca36e960047dfa3fb418"
+                "reference": "d5e87b9f92064617f9ddb236694c93a474b2e71f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/buzzingpixel/corbomite-db/zipball/4fc0652fdc811441f479ca36e960047dfa3fb418",
-                "reference": "4fc0652fdc811441f479ca36e960047dfa3fb418",
+                "url": "https://api.github.com/repos/buzzingpixel/corbomite-db/zipball/d5e87b9f92064617f9ddb236694c93a474b2e71f",
+                "reference": "d5e87b9f92064617f9ddb236694c93a474b2e71f",
                 "shasum": ""
             },
             "require": {
@@ -529,7 +529,8 @@
                 "buzzingpixel/corbomite-cli": "^1.0",
                 "buzzingpixel/corbomite-di": "^1.0",
                 "ext-pdo": "*",
-                "php": ">=7.2"
+                "php": ">=7.2",
+                "ramsey/uuid": "^3.8"
             },
             "require-dev": {
                 "phpmd/phpmd": "^2.6",
@@ -552,7 +553,7 @@
             ],
             "description": "Corbomite DB",
             "homepage": "https://buzzingpixel.com/",
-            "time": "2019-01-21T15:29:40+00:00"
+            "time": "2019-01-22T20:46:45+00:00"
         },
         {
             "name": "buzzingpixel/corbomite-di",
@@ -641,21 +642,21 @@
         },
         {
             "name": "buzzingpixel/corbomite-flash-data",
-            "version": "1.0.3",
+            "version": "1.1.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/buzzingpixel/corbomite-flash-data.git",
-                "reference": "b0b6810d01c191353129511b16c462e702da985e"
+                "reference": "69ac6577187b393cd0eb4882e33b1ce6620bda8c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/buzzingpixel/corbomite-flash-data/zipball/b0b6810d01c191353129511b16c462e702da985e",
-                "reference": "b0b6810d01c191353129511b16c462e702da985e",
+                "url": "https://api.github.com/repos/buzzingpixel/corbomite-flash-data/zipball/69ac6577187b393cd0eb4882e33b1ce6620bda8c",
+                "reference": "69ac6577187b393cd0eb4882e33b1ce6620bda8c",
                 "shasum": ""
             },
             "require": {
                 "buzzingpixel/cookie-api": "^1.1.1",
-                "buzzingpixel/corbomite-db": "^1.0",
+                "buzzingpixel/corbomite-db": "^1.2.1",
                 "buzzingpixel/corbomite-di": "^1.0",
                 "buzzingpixel/corbomite-migrations": "^1.0",
                 "ext-json": "*",
@@ -693,7 +694,7 @@
                 }
             ],
             "description": "Corbomite Flash Data",
-            "time": "2019-01-22T15:31:52+00:00"
+            "time": "2019-01-23T03:55:16+00:00"
         },
         {
             "name": "buzzingpixel/corbomite-http",
@@ -851,20 +852,20 @@
         },
         {
             "name": "buzzingpixel/corbomite-queue",
-            "version": "1.1.1",
+            "version": "1.2.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/buzzingpixel/corbomite-queue.git",
-                "reference": "6b590c3bd334a59aed92ce392f842dd8ee8182b2"
+                "reference": "bf08976b7b4e75a0325dbd2d8b2fd60c83f1b3a8"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/buzzingpixel/corbomite-queue/zipball/6b590c3bd334a59aed92ce392f842dd8ee8182b2",
-                "reference": "6b590c3bd334a59aed92ce392f842dd8ee8182b2",
+                "url": "https://api.github.com/repos/buzzingpixel/corbomite-queue/zipball/bf08976b7b4e75a0325dbd2d8b2fd60c83f1b3a8",
+                "reference": "bf08976b7b4e75a0325dbd2d8b2fd60c83f1b3a8",
                 "shasum": ""
             },
             "require": {
-                "buzzingpixel/corbomite-db": "^1.1",
+                "buzzingpixel/corbomite-db": "^1.2.1",
                 "buzzingpixel/corbomite-di": "^1.0",
                 "buzzingpixel/corbomite-migrations": "^1.0",
                 "ext-json": "*",
@@ -896,25 +897,25 @@
                 }
             ],
             "description": "Corbomite queue",
-            "time": "2019-01-22T15:06:07+00:00"
+            "time": "2019-01-22T23:01:30+00:00"
         },
         {
             "name": "buzzingpixel/corbomite-schedule",
-            "version": "1.0.3",
+            "version": "1.1.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/buzzingpixel/corbomite-schedule.git",
-                "reference": "a0c7bea6659dc3f5a6de5f98e831c7d6b8b8f91b"
+                "reference": "36576386d1b57d908295d949e53a5fcf918be466"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/buzzingpixel/corbomite-schedule/zipball/a0c7bea6659dc3f5a6de5f98e831c7d6b8b8f91b",
-                "reference": "a0c7bea6659dc3f5a6de5f98e831c7d6b8b8f91b",
+                "url": "https://api.github.com/repos/buzzingpixel/corbomite-schedule/zipball/36576386d1b57d908295d949e53a5fcf918be466",
+                "reference": "36576386d1b57d908295d949e53a5fcf918be466",
                 "shasum": ""
             },
             "require": {
                 "buzzingpixel/corbomite-config-collector": "^1.0",
-                "buzzingpixel/corbomite-db": "^1.0",
+                "buzzingpixel/corbomite-db": "^1.2.1",
                 "buzzingpixel/corbomite-di": "^1.0",
                 "buzzingpixel/corbomite-migrations": "^1.0",
                 "php": ">=7.1"
@@ -944,7 +945,7 @@
                 }
             ],
             "description": "Corbomite Schedule",
-            "time": "2019-01-22T15:45:53+00:00"
+            "time": "2019-01-23T04:12:07+00:00"
         },
         {
             "name": "buzzingpixel/corbomite-twig",
@@ -1000,21 +1001,21 @@
         },
         {
             "name": "buzzingpixel/corbomite-user",
-            "version": "2.1.2",
+            "version": "2.2.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/buzzingpixel/corbomite-user.git",
-                "reference": "065a970c48949ca4e6bb04dc5d8ee380bb01bcba"
+                "reference": "cf0f8dc88a568d284fdc411b9931ac5ea09198ae"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/buzzingpixel/corbomite-user/zipball/065a970c48949ca4e6bb04dc5d8ee380bb01bcba",
-                "reference": "065a970c48949ca4e6bb04dc5d8ee380bb01bcba",
+                "url": "https://api.github.com/repos/buzzingpixel/corbomite-user/zipball/cf0f8dc88a568d284fdc411b9931ac5ea09198ae",
+                "reference": "cf0f8dc88a568d284fdc411b9931ac5ea09198ae",
                 "shasum": ""
             },
             "require": {
                 "buzzingpixel/cookie-api": "^1.1",
-                "buzzingpixel/corbomite-db": "^1.1",
+                "buzzingpixel/corbomite-db": "^1.2.1",
                 "buzzingpixel/corbomite-di": "^1.0",
                 "buzzingpixel/corbomite-events": "^1.0",
                 "buzzingpixel/corbomite-flash-data": "^1.0.1",
@@ -1058,7 +1059,7 @@
                 }
             ],
             "description": "Corbomite User",
-            "time": "2019-01-22T15:12:02+00:00"
+            "time": "2019-01-23T03:31:36+00:00"
         },
         {
             "name": "buzzingpixel/minify",
@@ -6384,12 +6385,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/Roave/SecurityAdvisories.git",
-                "reference": "d155baccb43ba2542941fbcba258b85ce7786419"
+                "reference": "db876706aacd4ffbd1c253358d19a651e50e65c2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Roave/SecurityAdvisories/zipball/d155baccb43ba2542941fbcba258b85ce7786419",
-                "reference": "d155baccb43ba2542941fbcba258b85ce7786419",
+                "url": "https://api.github.com/repos/Roave/SecurityAdvisories/zipball/db876706aacd4ffbd1c253358d19a651e50e65c2",
+                "reference": "db876706aacd4ffbd1c253358d19a651e50e65c2",
                 "shasum": ""
             },
             "conflict": {
@@ -6527,8 +6528,8 @@
                 "titon/framework": ">=0,<9.9.99",
                 "truckersmp/phpwhois": "<=4.3.1",
                 "twig/twig": "<1.20",
-                "typo3/cms": ">=6.2,<6.2.30|>=7,<7.6.32|>=8,<8.7.21|>=9,<9.5.2",
-                "typo3/cms-core": ">=8,<8.7.21|>=9,<9.5.2",
+                "typo3/cms": ">=6.2,<6.2.30|>=7,<7.6.32|>=8,<8.7.23|>=9,<9.5.4",
+                "typo3/cms-core": ">=8,<8.7.23|>=9,<9.5.4",
                 "typo3/flow": ">=1,<1.0.4|>=1.1,<1.1.1|>=2,<2.0.1|>=2.3,<2.3.16|>=3,<3.0.10|>=3.1,<3.1.7|>=3.2,<3.2.7|>=3.3,<3.3.5",
                 "typo3/neos": ">=1.1,<1.1.3|>=1.2,<1.2.13|>=2,<2.0.4",
                 "ua-parser/uap-php": "<3.8",
@@ -6580,7 +6581,7 @@
                 }
             ],
             "description": "Prevents installation of composer packages with known security vulnerabilities: no API, simply require it",
-            "time": "2019-01-15T19:39:37+00:00"
+            "time": "2019-01-22T18:37:22+00:00"
         },
         {
             "name": "sebastian/code-unit-reverse-lookup",

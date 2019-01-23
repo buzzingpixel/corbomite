@@ -21,15 +21,15 @@
         "buzzingpixel/twig-getenv": "^1.0",
         "buzzingpixel/twig-filetime": "^1.0",
         "buzzingpixel/cookie-api": "^1.1.1",
-        "buzzingpixel/corbomite-db": "^1.1",
+        "buzzingpixel/corbomite-db": "^1.2.1",
         "buzzingpixel/corbomite-migrations": "^1.0.1",
-        "buzzingpixel/corbomite-queue": "^1.1.1",
-        "buzzingpixel/corbomite-schedule": "^1.0.3",
-        "buzzingpixel/corbomite-user": "^2.1.2",
-        "buzzingpixel/corbomite-flash-data": "^1.0.3",
+        "buzzingpixel/corbomite-queue": "^1.2.0",
+        "buzzingpixel/corbomite-schedule": "^1.1.0",
+        "buzzingpixel/corbomite-user": "^2.2.1",
+        "buzzingpixel/corbomite-flash-data": "^1.1.0",
         "buzzingpixel/request-data-store": "^1.0.1",
         "buzzingpixel/corbomite-mailer": "^1.0",
-        "buzzingpixel/corbomite-events": "^1.0"
+        "buzzingpixel/corbomite-events": "^1.0.1"
     },
     "require-dev": {
         "roave/security-advisories": "dev-master",
